@@ -1,0 +1,2911 @@
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('fonts/Avenir-Book.eot');
+    src: url('fonts/Avenir-Book.woff2') format('woff2'),
+         url('fonts/Avenir-Book.woff') format('woff'),
+         url('fonts/Avenir-Book.ttf') format('truetype'),
+         url('fonts/Avenir-Book.svg#Avenir-Book') format('svg'),
+         url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+html, body {
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-snap-type: y;
+}
+
+.orange {
+    color: #F26224;
+}
+
+.no-d-desktop {
+    display: none;
+}
+
+.d-desktop {
+    display: block;
+}
+
+/* Navbar */
+.edu-nav {
+    min-height: 110px;
+    box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-margin {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.edu-nav-link {
+    color: #2C2C2C;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-link:hover {
+    color: #F26224;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 1.5px;
+    background-color: #2C2C2C;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-link:hover::after {
+    width: 30px;
+}
+
+.edu-nav-drop-link {
+    color: #2C2C2C;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-drop-link:hover {
+    color: #F26224;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-drop-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background-color: #2C2C2C;
+    transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.edu-nav-drop-link:hover::after {
+    width: 30px;
+}
+
+.edu-nav-dropdown {
+    border-radius: 15px !important;
+    box-shadow: 0px 3.72908px 37.29084px 0.93227px rgba(0, 0, 0, 0.19);
+}
+
+.edu-drop-padding {
+    padding: .25rem 1rem;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* Home Section 1 */
+.home-section-1 {
+    min-height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.home-sec-1-title {
+    color: #000;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124%; /* 72.789px */
+    letter-spacing: -1.174px;
+}
+
+.home-sec-1-title span {
+    color: #F26224;
+    position: relative;
+}
+
+.home-sec-1-title span::before {
+    content: "";
+    position: absolute;
+    height: 41.194px;
+    width: 98%;
+    left: 10px;
+    bottom: 0;
+    opacity: 0.12;
+    background: #283B8F;
+
+}
+
+.home-sec-1-para {
+    color: #686868;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%;
+    letter-spacing: -0.44px;
+}
+
+.bestiu {
+    color: #283B8F;
+    font-weight: 600;
+}
+
+.edubest-online {
+    color: #F26224;
+    font-weight: 600;
+}
+
+.edu-nav-drop {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Home Section 2 */
+.home-section-2 {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(95deg, #24316C 0%, #2B41A2 100%);
+    padding-bottom: 20px;
+}
+
+.home-sec2-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124%; /* 70.68px */
+}
+
+.home-sec2-title span {
+    font-weight: 600;
+}
+
+.home-collab {
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-collab-img1{
+    width: 170px;
+}
+
+.home-collab-img2{
+    width: 200px;
+}
+
+/* Home Section 3 */
+.home-section-3 {
+    min-height: 80vh;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.home-sec3-title {
+    color: #000;
+    text-align: center;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.home-sec3-title span {
+    color: #283B8F;
+    font-weight: 500;
+}
+
+.home-program-slide {
+    min-height: 57vh;
+    margin: 10px;
+    border-radius: 11.115px;
+    background: #F5F5F5;
+    box-shadow: 0px 2.77864px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.h-program-slide-title {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.h-program-slide-title span {
+    color: #F26224;
+    font-weight: 600;
+}
+
+.h-program-slide-para {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#h-program-slide-icon {
+    width: 20px;
+}
+
+.h-carousel-margin {
+    margin-left: 100px;
+}
+
+/* Carousel */
+.owl-nav {
+    height: 0;
+}
+
+.owl-stage {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+button.owl-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0 0 0 / 50%) !important;
+    color: white !important;
+    border-radius: 100% !important;
+    position: relative;
+    top: -290px;
+    right: -610px;
+}
+
+button.owl-prev {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0 0 0 / 50%) !important;
+    color: white !important;
+    border-radius: 100% !important;
+    position: relative;
+    top: -290px;
+    left: -700px;
+}
+
+/* Home Section 4 */
+.home-section-4 {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-sec4-title-l {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.home-sec4-title-r {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.home-sec4-title-t {
+    color: #283B8F;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+}
+
+.home-sec4-title-t::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 40%;
+    background-color: #F26224;
+}
+
+.home-sec4-title-t-r {
+    color: #283B8F;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+}
+
+.home-sec4-title-t-r::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 40%;
+    background-color: #F26224;
+}
+
+.home-sec4-title-l::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #F26224;
+}
+
+.home-sec4-para-l {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(91deg, #EF672D 0%, #DC622E 100%);
+}
+
+.home-sec4-para-r {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg, #EF672D 0%, #DC622E 100%);
+}
+
+.home-sec4-para {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 44px */
+    letter-spacing: -0.44px;
+}
+
+.home-sec4-para-r-t {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    text-align: end;
+    font-weight: 400;
+    line-height: 200%; /* 44px */
+    letter-spacing: -0.44px;
+}
+
+.container-margin-l {
+    padding-left: 100px;
+}
+
+.container-margin-r {
+    padding-right: 100px;
+}
+
+.home-sec4-b-r {
+    position: relative;
+}
+
+.home-sec4-b-r::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 100%;
+    background-color: white;
+    right: 0;
+}
+
+.icon-bulb {
+    width: 80px;
+}
+
+/* Home Section 5 */
+.home-section-5 {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-sec5-t {
+    color: #283B8F;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+}
+
+.home-sec5-title {
+    display: flex;
+    justify-content: center;
+}
+
+.home-sec5-t::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    bottom: 0;
+    right: 51.5%;
+    background: #F26224;
+}
+
+.home-sec5-t::after {
+    content: "";
+    position: absolute;
+    width: 48%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #F26224;
+}
+
+.home-sec5-para {
+    margin-top: 50px;
+}
+
+.home-sec5-desc {
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%; /* 40.04px */
+    letter-spacing: -0.44px;
+}
+
+/* Home Section 6 */
+.home-section-6 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-sec6-title {
+    color: #000;
+    font-family: 'Avenir-Book';
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 350;
+}
+
+.home-sec6-title-p {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.home-sec6-para {
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%; /* 40.04px */
+    letter-spacing: -0.44px;
+}
+
+.home-sec6-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edubest-name-1 {
+    width: 350px;
+}
+
+/* Home Section 7 */
+.home-section-7 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-sec7-title-t {
+    color: #000;
+    font-size: 90px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.edubest-name {
+    position: relative;
+    top: -10px;
+    width: 350px;
+}
+
+.home-sec7-desc {
+    color: #000;
+    text-align: center;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%; /* 40.04px */
+    letter-spacing: -0.44px;
+}
+
+.home-sec7-tab {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.home-sec7-btn {
+    display: flex;
+    width: 95%;
+    height: 50px;
+    color: #F26224;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 182%;
+    border-radius: 35.5px;
+    border: 2px solid #F26224;
+    background: rgba(242, 98, 36, 0.20);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home Enquiry Section */
+.home-enquiry-section {
+    min-height: 100vh;
+}
+
+.home-enq-title-t {
+    color: #283B8F;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.home-enq-title-t span {
+    color: #F26224;
+}
+
+.mult-select-tag button:first-child {
+    display: flex;
+}
+
+.mult-select-tag .body {
+    height: 2.7rem;
+}
+
+.home-enq-input {
+    border-radius: 9px !important;
+    border: 1px solid #000 !important;
+    padding: 0.6rem 1.5rem;
+}
+
+.mult-select-tag {
+    border-radius: 9px !important;
+    border: 1px solid #000 !important;
+}
+
+.mult-select-tag .rounded {
+    border-radius: 9px !important;
+}
+
+.mult-select-tag .btn-container {
+    border-left: 1px solid #000 !important;
+}
+
+.mult-select-tag .body {
+    height: auto;
+}
+
+.home-enq-submit {
+    width: 195px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 11.627px;
+    background: #223178;
+}
+
+.home-enq-desc {
+    color: #8F8F8F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137%; /* 23.29px */
+}
+
+.home-enq-img-1 {
+    width: 430px;
+}
+
+.mult-select-tag .input-container {
+    min-height: 2.55rem;
+}
+
+/********** Software Engineer Page ************/
+
+/* Software Section 1 */
+.soft-section-1 {
+    background: linear-gradient(108deg, #243168 0%, #2C42A5 100%);
+}
+
+/* .soft-sec1-png {
+    width: 750px;
+} */
+
+.soft-sec1-img {
+    text-align: end;
+    width: 90%;
+}
+
+.soft-sec1-img-bg {
+    background-image: url(../images/software-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.soft-sec1-title-h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #FFF;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 112.316px */
+    padding-left: 30px;
+    position: relative;
+}
+
+.soft-sec1-title-h1::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0;
+    background: #F26224;
+}
+
+.soft-sec1-left {
+    margin-top: 70px;
+    margin-bottom: 33px;
+}
+
+.soft-sec1-title-p {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 50.472px */
+    margin-top: 50px;
+}
+
+.soft-sec1-title-p-2 {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 20.691px */
+    margin-top: 50px;
+}
+
+.soft-sec1-title-p-3 {
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 124%; /* 30.003px */
+    margin-top: 50px;
+}
+
+.soft-sec1-tabs {
+    display: flex;
+    margin-top: 50px;
+}
+
+.soft-sec1-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 55px;
+    border-radius: 30px;
+    background: #F26224;
+    box-shadow: 0px 0px 34px 0px rgba(242, 98, 36, 0.21);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.soft-sec1-btn:hover {
+    background-color: white;
+    border: 3px solid #F26224;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Home Section 2 Programs */
+.home-section-2-programs {
+    background: white !important;
+}
+
+.text-blue {
+    color: #2E3B81 !important;
+}
+
+.shadows-box {
+    box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Software Section 2 */
+.soft-section-2 {
+    min-height: 60vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.soft-sec2-title-h2 {
+    color: #F26224;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.soft-sec2-title-h2 span {
+    font-weight: 600;
+}
+
+.soft-sec2-desc {
+    color: #626262;
+    text-align: center;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.soft-sec2-infos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.soft-sec2-info-i {
+    height: 90px;
+}
+
+.soft-sec2-info {
+    margin-left: 25px;
+}
+
+.soft-sec2-highlights {
+    padding: 40px 50px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.25);
+}
+
+.soft-sec2-info-title {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.soft-sec2-info-para {
+    color: #626262;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+/* Software Section 3 */
+.soft-section-3 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.soft-sec3-title-h4 {
+    color: #2E3B81;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.soft-sec3-title-h4 span {
+    color: #F26224;
+    font-weight: 600;
+}
+
+.soft-sec3-logos {
+    display: flex;
+}
+
+.soft-sec3-ibm {
+    width: 100px;
+}
+
+.soft-sec3-card-t {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.soft-sec3-card-p {
+    color: #626262;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.soft-sec3-card {
+    display: flex;
+}
+
+.soft-sec3-card-info {
+    margin-left: 30px;
+    width: 60%;
+}
+
+.soft-sec3-card-i {
+    width: 65px;
+}
+
+.soft-sec3-card-icon {
+    display: flex;
+    align-items: center;
+}
+
+.soft-sec3-bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.soft-sec3-card-mt {
+    margin-top: 90px;
+}
+
+/* Software Section 4 */
+.soft-section-4 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.soft-sec4-title-h4 {
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.soft-sec4-title-h4 span {
+    color: #2E3B81;
+    font-weight: 600;
+}
+
+.soft-sec4-bottom {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.bg-gray {
+    background: rgba(46, 59, 129, 0.12);
+}
+
+.soft-sec4-card {
+    padding: 30px 20px;
+}
+
+.soft-sec4-card-t {
+    color: #000;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.soft-sec4-card-p {
+    color: #626262;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* Software Section 5 */
+.soft-section-5 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.soft-sec5-title-h4 {
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.soft-sec5-title-h4 span {
+    color: #2E3B81;
+    font-weight: 600;
+}
+
+.soft-sec5-para {
+    color: #626262;
+    text-align: center;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.soft-sec5-desc {
+    display: flex;
+    justify-content: center;
+}
+
+/* Software Section 6 */
+.soft-section-6 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.soft-sec6-title-h4 {
+    color: #2E3B81;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.soft-sec6-title-h4 span {
+    color: #F26224;
+    font-weight: 600;
+}
+
+.soft-sec6-tools {
+    margin-top: 50px;
+}
+
+
+/* Apply Now - Software Engineer Page */
+.apply-soft-section-1 {
+    min-height: 86vh;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(108deg, #243168 0%, #2C42A5 100%);
+    position: relative;
+}
+
+.apply-soft-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/software-apply-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+.z-index-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.apply-soft-form {
+    border-radius: 31px;
+    background: #FFF;
+    padding: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.apply-soft-subtitle {
+    color: #FFF;
+    font-size: 38px;
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 58px */
+}
+
+.apply-soft-desc {
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 23.203px */
+}
+
+.apply-soft-section-1-margin {
+    margin-bottom: 100px;
+}
+
+/* Brochure Software Engineer Page */
+.brochure-soft-form-p {
+    color: #373737;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 22.898px */
+}
+
+/* UIUX Designer Page */
+.uiux-sec1-imge-bg {
+    background-image: url(../images/uiux-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-uiux-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/uiux-apply-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+/* Electric Vehicle Designer Page */
+.electric-sec1-imge-bg {
+    background-image: url(../images/electric-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-electric-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/electric-apply-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+/* Digital Marketing Specialist Page */
+.digital-sec1-imge-bg {
+    background-image: url(../images/digital-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-digital-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/digital-apply-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+/* Data Analyst Page */
+.data-sec1-imge-bg {
+    background-image: url(../images/data-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-data-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/data-apply-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+/* Spoken English & Public Speaking Page */
+.english-sec1-imge-bg {
+    background-image: url(../images/english-sec1-img.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-english-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/english-sec1-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+.key-content-t {
+    color: #293C8F;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.key-content-p {
+    color: #626262;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+}
+
+.eng-key-bottom {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.eng-section-2 {
+    min-height: 40vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.eng-section-3 {
+    min-height: 40vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #293B8D;
+}
+
+.english-sec3-title-h2 {
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.eng-sec3-para {
+    padding-top: 50px;
+}
+
+.english-sec3-para {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 174.5%;
+}
+
+/* L.E.A.P Accounts & Finance Page */
+.leap-sec1-img-bg {
+    background-image: url(../images/leap-sec1-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leap-sec1-title-h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #FFF;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 112.316px */
+    padding-left: 30px;
+    position: relative;
+}
+
+.leap-sec1-title-h1::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0;
+    background: #F26224;
+}
+
+.leap-section-2 {
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leap-sec2-h2 {
+    color: #F26224;
+    font-size: 134px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -6.282px;
+}
+
+.leap-sec2-p {
+    color: #2B40A0;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec2-line {
+    width: 100%;
+    height: 3px;
+    background: #F26224;
+}
+
+.leap-sec2-2-p.mb-0 {
+    text-align: center;
+    color: #F26224;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.leap-sec2-bottom-p {
+    color: #353535;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.leap-sec2-bottom-p::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    left: 0;
+    background: #F26224;
+}
+
+.leap-sec2-bottom-p::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #F26224;
+}
+
+.leap-sec3-p {
+    color: #353535;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec3-p-2 {
+    color: #293C90;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.leap-sec4-p {
+    color: #353535;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec4-p-2 {
+    color: #2E3B81;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -6.282px;
+}
+
+.leap-sec4-3-h3 {
+    color: #303980;
+    font-size: 135px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.leap-sec4-3-p {
+    color: #303980;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.977px;
+}
+
+.leap-sec4-3-circle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.leap-sec4-3-p2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.5%;
+    letter-spacing: -1.953px;
+}
+
+.leap-sec4-3-circle1 {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F26224;
+}
+
+.leap-sec4-3-circle2 {
+    position: relative;
+    left: -70px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #303980;
+}
+
+.leap-sec4-4 {
+    display: flex;
+    align-items: center;
+}
+
+.leap-sec4-4-h {
+    color: #303980;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 30px;
+}
+
+.leap-sec4-5-h4 {
+    color: #303980;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.016px;
+}
+
+.leap-sec4-5-icon {
+    height: 130px;
+}
+
+.leap-sec6-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leap-sec6-2-icon {
+    width: 40px;
+}
+
+.leap-sec6-2-p {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec6-2-p span {
+    color: #F26224;
+}
+
+.leap-sec6-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.leap-sec6-3-box {
+    width: 500px;
+    padding: 20px 40px;
+    background: #D66228;
+}
+
+.leap-sec6-3-p {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec6-4-p {
+    color: #000;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec6-4-p2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leap-sec6-4-box {
+    max-width: 430px;
+    padding: 20px 0px;
+    background: #313A81;
+}
+
+.leap-sec7-card-w {
+    width: 95%;
+}
+
+.leap-sec7-2-card-img {
+    max-height: 380px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.leap-sec7-2-h4 {
+    color: #2B40A0;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+li.leap-sec8-2-list {
+    color: #2B40A0;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 210.5%;
+}
+
+.leap-sec8-2-list i, svg {
+    font-size: 15px;
+}
+
+.leap-sec8-pb {
+    padding-bottom: 150px;
+}
+
+.apply-leap-section-1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/leap-sec1-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 1;
+}
+
+
+/* ******************************************* */
+/* Footer Section */
+.edubest-footer {
+    background: #0C0C0C;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer-link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-link:hover {
+    color: #F26224;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.container-margin-footer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-header {
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-description {
+    color: #ABABAB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-desc-link {
+    text-decoration: none;
+}
+
+.footer-desc-link:hover {
+    color: #F26224;
+}
+
+.edubest-footer-bottom {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.edu-best-footer-cr-p {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.edu-best-footer-cr {
+    display: flex;
+    align-items: end;
+}
+
+/* BESTIU Login Page */
+.bestiu-login {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bestiu-login-img {
+    min-height: 100vh;
+    background-image: url(../images/bestiu-login-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .no-d-mobile {
+        display: none;
+    }
+    .d-mobile {
+        display: block;
+    }
+
+    .navbar-mobile-btn {
+        display: flex;
+    }
+
+    /* Navbar-full */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+        background: linear-gradient(95deg, #24316C 0%, #2B41A2 100%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop button {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop ul li button {
+        color: black;
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .edu-nav-drop-link {
+        color: #2C2C2C !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        position: relative;
+        transition: width 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    /* Navbar-full Ends */
+
+    .btn-group, .btn-group-vertical {
+        display: contents;
+    }
+
+    .container-margin {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container-margin-enq {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .h-carousel-margin {
+        margin-left: 0;
+    }
+
+    .container-margin-l {
+        padding-left: 30px;
+    }
+
+    .container-margin-r {
+        padding-right: 30px;
+    }
+
+    .container-margin-l-home {
+        padding-right: 40px;
+    }
+
+    .container-margin-r-home {
+        padding-left: 40px;
+    }
+
+    .container-margin-footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .edubest-footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .dropdown-menu {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .bestiu-login-img {
+        min-height: 40vh;
+        background-position: top;
+    }
+
+    .bestiu-login {
+        min-height: 46vh;
+    }
+
+    .home-section-1 {
+        padding-bottom: 10px;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+    /* .no-d-mobile {
+        display: none;
+    }
+    .d-mobile {
+        display: block;
+    } */
+    /* Navbar-full */
+    /* .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+        background: linear-gradient(95deg, #24316C 0%, #2B41A2 100%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop button {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop ul li button {
+        color: black;
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      } */
+    /* Navbar-full Ends */
+
+    /* .btn-group, .btn-group-vertical {
+        display: contents;
+    } */
+
+    .home-section-1 {
+        min-height: 85vh;
+        margin-bottom: 40px;
+    }
+
+    .home-sec-1-title {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .home-sec-1-para {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .home-sec2-title {
+        font-size: 20px;
+    }
+
+    .home-collab {
+        width: 137px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .home-collab-img1 {
+        width: 100px;
+    }
+
+    .home-collab-img2 {
+        width: 110px;
+    }
+
+    .home-section-2 {
+        min-height: 40vh;
+    }
+
+    .home-sec3-title {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t-r {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t {
+        font-size: 40px;
+    }
+
+    .icon-bulb {
+        width: 40px;
+    }
+
+    .home-section-5 {
+        min-height: 60vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec5-t {
+        font-size: 50px;
+    }
+
+    .home-sec5-desc {
+        font-size: 17px;
+    }
+
+    .edubest-name-1 {
+        width: 240px;
+    }
+
+    .home-sec6-title {
+        font-size: 60px;
+    }
+
+    .home-sec6-title-p {
+        font-size: 26px;
+    }
+
+    .home-section-6 {
+        min-height: 90vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec7-title-t {
+        font-size: 28px;
+    }
+
+    .edubest-name {
+        top: -5px;
+        width: 130px;
+    }
+
+    .home-sec7-btn {
+        font-size: 12px;
+    }
+
+    .home-sec7-tab {
+        margin-top: 40px
+    }
+
+    .home-section-7 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-enq-title-t {
+        font-size: 30px;
+    }
+
+    .home-enq-img-1 {
+        transform: translateX(30px) translateY(60px);
+    }
+
+    .home-enquiry-section {
+        margin-bottom: 60px;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-menu li {
+        margin-bottom: 30px;
+    }
+
+    .soft-sec1-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .soft-sec1-title-h1 {
+        font-size: 50px;
+    }
+
+    .leap-section-2 {
+        min-height: 30vh;
+    }
+
+    .leap-sec8-pb {
+        padding-bottom: 50px;
+    }
+
+    .leap-sec6-2-p {
+        font-size: 19px;
+    }
+
+    li.leap-sec8-2-list {
+        font-size: 20px;
+        line-height: 160.5%;
+    }
+
+    .leap-sec7-2-h4 {
+        font-size: 20px;
+    }
+
+    .leap-sec6-4-p2 {
+        font-size: 23px;
+    }
+
+    .leap-sec6-4-p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .leap-sec4-5-h4 {
+        font-size: 20px;
+    }
+
+    .leap-sec4-5-icon {
+        height: 90px;
+    }
+
+    .leap-sec4-4-h {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .leap-sec4-3-h3 {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .leap-sec4-3-p {
+        text-align: center;
+        font-size: 37px;
+    }
+
+    .leap-sec4-3-circle {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .leap-sec4-3-circle1, .leap-sec4-3-circle2 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .leap-sec4-3-circle2 {
+        left: -20px;
+    }
+
+    .leap-sec4-3-p2 {
+        font-size: 25px;
+    }
+
+    .leap-sec3-p {
+        font-size: 20px;
+    }
+
+    .leap-sec3-p-2 {
+        font-size: 27px;
+    }
+
+    .leap-sec4-p {
+        font-size: 19px;
+    }
+
+    .leap-sec4-p-2 {
+        font-size: 70px;
+    }
+
+    .leap-sec2-bottom-p {
+        font-size: 25px;
+    }
+
+    .leap-sec1-title-h1 {
+        font-size: 90px;
+    }
+
+    .leap-sec2-h2 {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .leap-sec2-p {
+        font-size: 18px;
+    }
+
+    .soft-sec1-title-p {
+        font-size: 25px;
+    }
+
+    .soft-sec1-title-p-3 {
+        font-size: 16px;
+    }
+
+    .soft-sec1-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+    
+    .soft-sec1-tabs {
+        justify-content: space-between;
+    }
+
+    .soft-sec2-title-h2 {
+        font-size: 30px;
+    }
+
+    .soft-sec2-desc {
+        font-size: 16px;
+    }
+
+    .soft-sec2-highlights {
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .soft-sec2-info-i {
+        height: auto;
+        width: 40px;
+    }
+
+    .soft-sec2-info-icon {
+        display: flex;
+    }
+
+    .soft-sec2-info {
+        margin-bottom: 20px;
+    }
+
+    .soft-sec2-info-title {
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+
+    .soft-sec3-title-h4 {
+        font-size: 35px;
+    }
+
+    .soft-sec3-ibm {
+        width: 70px;
+    }
+
+    .soft-sec3-micro {
+        width: 180px;
+    }
+
+    .soft-sec3-card-info {
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .soft-sec3-card-mt {
+        margin-top: 50px;
+    }
+
+    .soft-sec4-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-para {
+        font-size: 16px;
+    }
+
+    .soft-sec6-title-h4 {
+        font-size: 30px;
+    }
+
+    .apply-soft-form {
+        padding: 40px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    /* .no-d-mobile {
+        display: none;
+    }
+    .d-mobile {
+        display: block;
+    } */
+    /* Navbar-full */
+    /* .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+        background: linear-gradient(95deg, #24316C 0%, #2B41A2 100%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop button {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop ul li button {
+        color: black;
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      } */
+    /* Navbar-full Ends */
+
+    /* .btn-group, .btn-group-vertical {
+        display: contents;
+    } */
+
+    .home-section-1 {
+        min-height: 100vh;
+        margin-bottom: 40px;
+    }
+
+    .home-sec-1-title {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .home-sec-1-para {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .home-sec2-title {
+        font-size: 20px;
+    }
+
+    .home-collab {
+        width: 137px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .home-collab-img1 {
+        width: 100px;
+    }
+
+    .home-collab-img2 {
+        width: 110px;
+    }
+
+    .home-section-2 {
+        min-height: 40vh;
+    }
+
+    .home-sec3-title {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t-r {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t {
+        font-size: 40px;
+    }
+
+    .icon-bulb {
+        width: 40px;
+    }
+
+    .home-section-5 {
+        min-height: 60vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec5-t {
+        font-size: 50px;
+    }
+
+    .home-sec5-desc {
+        font-size: 17px;
+    }
+
+    .edubest-name-1 {
+        width: 240px;
+    }
+
+    .home-sec6-title {
+        font-size: 60px;
+    }
+
+    .home-sec6-title-p {
+        font-size: 26px;
+    }
+
+    .home-section-6 {
+        min-height: 90vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec7-title-t {
+        font-size: 28px;
+    }
+
+    .edubest-name {
+        top: -5px;
+        width: 130px;
+    }
+
+    .home-sec7-btn {
+        font-size: 12px;
+    }
+
+    .home-sec7-tab {
+        margin-top: 40px
+    }
+
+    .home-section-7 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-enq-title-t {
+        font-size: 30px;
+    }
+
+    .home-enq-img-1 {
+        transform: translateX(30px) translateY(60px);
+    }
+
+    .home-enquiry-section {
+        margin-bottom: 60px;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-menu li {
+        margin-bottom: 30px;
+    }
+
+    .soft-sec1-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .soft-sec1-title-h1 {
+        font-size: 50px;
+    }
+
+    .soft-sec1-title-p {
+        font-size: 25px;
+    }
+
+    .soft-sec1-title-p-3 {
+        font-size: 16px;
+    }
+
+    .soft-sec1-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+    
+    .soft-sec1-tabs {
+        justify-content: space-between;
+    }
+
+    .soft-sec2-title-h2 {
+        font-size: 30px;
+    }
+
+    .soft-sec2-desc {
+        font-size: 16px;
+    }
+
+    .soft-sec2-highlights {
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .soft-sec2-info-i {
+        height: auto;
+        width: 40px;
+    }
+
+    .soft-sec2-info-icon {
+        display: flex;
+    }
+
+    .soft-sec2-info {
+        margin-bottom: 20px;
+    }
+
+    .soft-sec2-info-title {
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+
+    .soft-sec3-title-h4 {
+        font-size: 35px;
+    }
+
+    .soft-sec3-ibm {
+        width: 70px;
+    }
+
+    .soft-sec3-micro {
+        width: 180px;
+    }
+
+    .soft-sec3-card-info {
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .soft-sec3-card-mt {
+        margin-top: 50px;
+    }
+
+    .soft-sec4-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-para {
+        font-size: 16px;
+    }
+
+    .soft-sec6-title-h4 {
+        font-size: 30px;
+    }
+
+    .apply-soft-form {
+        padding: 40px;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /* .no-d-mobile {
+        display: none;
+    }
+    .d-mobile {
+        display: block;
+    } */
+    /* Navbar-full */
+    /* .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+        background: linear-gradient(95deg, #24316C 0%, #2B41A2 100%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop button {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .edu-nav-drop ul li button {
+        color: black;
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      } */
+    /* Navbar-full Ends */
+
+    /* .btn-group, .btn-group-vertical {
+        display: contents;
+    } */
+
+    .home-section-1 {
+        min-height: 100vh;
+        margin-bottom: 40px;
+    }
+
+    .home-sec-1-title {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .home-sec-1-para {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .home-sec2-title {
+        font-size: 20px;
+    }
+
+    .home-collab {
+        width: 137px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .home-collab-img1 {
+        width: 100px;
+    }
+
+    .home-collab-img2 {
+        width: 110px;
+    }
+
+    .home-section-2 {
+        min-height: 40vh;
+        padding-bottom: 0;
+    }
+
+    .home-sec3-title {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t-r {
+        font-size: 40px;
+    }
+
+    .home-sec4-title-t {
+        font-size: 40px;
+    }
+
+    .icon-bulb {
+        width: 40px;
+    }
+
+    .home-section-5 {
+        min-height: 60vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec5-t {
+        font-size: 50px;
+    }
+
+    .home-sec5-desc {
+        font-size: 17px;
+    }
+
+    .edubest-name-1 {
+        width: 240px;
+    }
+
+    .home-sec6-title {
+        font-size: 60px;
+    }
+
+    .home-sec6-title-p {
+        font-size: 26px;
+    }
+
+    .home-section-6 {
+        min-height: 90vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-sec7-title-t {
+        font-size: 28px;
+    }
+
+    .edubest-name {
+        top: -5px;
+        width: 130px;
+    }
+
+    .home-sec7-btn {
+        font-size: 12px;
+    }
+
+    .home-sec7-tab {
+        margin-top: 40px
+    }
+
+    .home-section-7 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .home-enq-title-t {
+        font-size: 30px;
+    }
+
+    .home-enq-img-1 {
+        transform: translateX(30px) translateY(60px);
+    }
+
+    .home-enquiry-section {
+        margin-bottom: 60px;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-menu li {
+        margin-bottom: 30px;
+    }
+
+    .soft-sec1-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .soft-sec1-title-h1 {
+        font-size: 50px;
+    }
+
+    .soft-sec1-title-p {
+        font-size: 25px;
+    }
+
+    .soft-sec1-title-p-3 {
+        font-size: 16px;
+    }
+
+    .soft-sec1-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+    
+    .soft-sec1-tabs {
+        justify-content: space-between;
+    }
+
+    .soft-sec2-title-h2 {
+        font-size: 30px;
+    }
+
+    .soft-sec2-desc {
+        font-size: 16px;
+    }
+
+    .soft-sec2-highlights {
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .soft-sec2-info-i {
+        height: auto;
+        width: 40px;
+    }
+
+    .soft-sec2-info-icon {
+        display: flex;
+    }
+
+    .soft-sec2-info {
+        margin-bottom: 20px;
+    }
+
+    .soft-sec2-info-title {
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+
+    .soft-sec3-title-h4 {
+        font-size: 35px;
+    }
+
+    .soft-sec3-ibm {
+        width: 70px;
+    }
+
+    .soft-sec3-micro {
+        width: 180px;
+    }
+
+    .soft-sec3-card-info {
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .soft-sec3-card-mt {
+        margin-top: 50px;
+    }
+
+    .soft-sec4-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-title-h4 {
+        font-size: 30px;
+    }
+
+    .soft-sec5-para {
+        font-size: 16px;
+    }
+
+    .soft-sec6-title-h4 {
+        font-size: 30px;
+    }
+
+    .apply-soft-form {
+        padding: 40px;
+    }
+
+    .leap-sec2-h2, .leap-sec6-4-p {
+        text-align: center;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .container-margin {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .home-section-1 {
+        min-height: 74vh;
+    }
+
+    .home-sec-1-title {
+        font-size: 38px;
+    }
+
+    .home-sec2-title {
+        font-size: 30px;
+    }
+
+    .home-sec3-title {
+        font-size: 54px;
+    }
+
+    .home-sec4-title-t, .home-sec4-title-t-r {
+        font-size: 50px;
+    }
+
+    .icon-bulb {
+        width: 50px;
+    }
+
+    .home-sec4-para, .home-sec4-para-r-t {
+        font-size: 15px;
+    }
+
+    .home-sec5-t {
+        font-size: 54px;
+    }
+
+    .home-section-4 {
+        min-height: 50vh;
+    }
+
+    .edubest-name-1 {
+        width: 300px;
+    }
+
+    .home-sec6-title {
+        font-size: 80px;
+    }
+
+    .home-sec6-title-p {
+        font-size: 35px;
+    }
+
+    .home-sec7-title-t {
+        font-size: 54px;
+    }
+
+    .edubest-name {
+        width: 240px;
+    }
+
+    .home-sec7-btn {
+        font-size: 10px;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .leap-sec2-p {
+        font-size: 28px;
+    }
+
+    .leap-sec2-h2 {
+        font-size: 110px;
+    }
+
+    .leap-sec3-p {
+        font-size: 19px;
+    }
+
+    .leap-sec4-3-h3 {
+        font-size: 90px;
+    }
+
+    .leap-sec4-3-p {
+        font-size: 47px;
+    }
+
+    .leap-sec4-3-circle1 {
+        width: 310px;
+        height: 310px;
+    }
+
+    .leap-sec4-3-circle2 {
+        width: 310px;
+        height: 310px;
+    }
+}

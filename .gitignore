@@ -1,0 +1,5 @@
+.env
+robots.txt
+sitemap.xml
+.htaccess
+composer.lock
